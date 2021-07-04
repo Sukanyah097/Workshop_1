@@ -52,7 +52,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//li[@class='nav-vendors ']")
 	private WebElement vendorsButton;
 
-	@FindBy(xpath="//a[text()='Enter Expense ']")
+	@FindBy(xpath="//span[@class='glyphicon glyphicon-plus-sign']")
 	private WebElement EnterExpenses;
 
 
