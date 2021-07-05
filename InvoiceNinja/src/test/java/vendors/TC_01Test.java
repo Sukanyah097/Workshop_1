@@ -45,6 +45,8 @@ class TC_01Test extends BaseTest{
 
 		expensepage.getMarkbillable().click();
 		expensepage.getSavebutton().click();
+		Assert.assertEquals("Edit Expense | Invoice Ninja", driver.getTitle());
+		Reporter.log("Expense Create page is created",true);
 
 
 	}

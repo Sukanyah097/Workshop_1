@@ -39,8 +39,8 @@ public class TC_03Test extends BaseTest {
 		driver.findElement(By.id("amount")).sendKeys("300",Keys.ENTER);
 		WebElement currency = driver.findElement(By.xpath("//input[@placeholder='US Dollar']"));
 		currency.clear();
-		Select select=new Select(currency);
-		select.deselectByVisibleText("Algerian Dinar");
+	/*	Select select=new Select(currency);
+		select.deselectByVisibleText("Algerian Dinar");*/
 	//	driver.findElement(By.xpath("//input[@placeholder='US Dollar']")).sendKeys("Albanian Lek",Keys.ENTER);
 		driver.findElement(By.xpath("//label[text()='Client']/..//input[@autocomplete='off'] ")).sendKeys("priya",Keys.ENTER);
 		driver.findElement(By.id("public_notes")).sendKeys("This is the task");
@@ -50,6 +50,8 @@ public class TC_03Test extends BaseTest {
 		driver.findElement(By.xpath("//label[text()='Mark billable']")).click();
 
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		System.out.println(driver.getTitle());
+
 
 	}
 }

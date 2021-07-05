@@ -44,6 +44,9 @@ import pomRepository.HomePage;
 			expensepage.getPaymentType().sendKeys("credit",Keys.ENTER);
 			expensepage.getTransaction_reference().sendKeys("123",Keys.ENTER);
 			expensepage.getSavebutton().click();
+			Assert.assertEquals("Edit Expense | Invoice Ninja", driver.getTitle());
+			Reporter.log("Expense Create page is created",true);
+
 		}
 	
 	
