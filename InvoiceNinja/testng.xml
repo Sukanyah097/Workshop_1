@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="create Lead in salesForce " preserve-order="true">
+    <classes>
+      <class name="vendors.TC_02Test"/>
+      <parameter name="Prams" value="Leads status=Working, Vendorname=sukanya, Category=abs,Amount=fsa, Currency=wadt,Client=hsdh,Publicnotes=sdsha,Privatenotes=sdbb,Paymenttype=credit,Transaction=online" ></parameter>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
